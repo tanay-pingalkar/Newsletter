@@ -1,0 +1,81 @@
+
+.div h3, .div p{
+    display:inline;
+}
+.div p{
+    position: relative;
+    top:10px;
+}
+.list{
+    width:80%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    padding:20px;
+}
+.div h4{
+    color:blue;
+    font-style: italic;
+    cursor: pointer;
+    display: inline-box;
+    
+}
+.div{
+    overflow: hidden;
+    padding:20px;
+    transition:0.2s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.582);
+    background-blend-mode: overlay;
+}
+.div:hover{
+    background-color: rgba(255, 255, 255, 0.329);
+    background-blend-mode: overlay;
+    box-shadow: rgba(0, 0, 0, 0.37) 0px 5px 30px;
+}
+@media screen and (max-width: 900px){
+    .list{
+        grid-template-columns: auto auto ;
+    }
+    .div h3{
+        font-size: 18px;
+    }
+    .div p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px){
+    .list{
+        grid-template-columns: auto  ;
+        padding: 30px;
+    }
+    .div h3{
+        font-size: 20px;
+    }
+    .div p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .list{
+        width:90%;
+        padding:5px;
+    }
+}
+@media screen and (max-width: 500px){
+    .list{
+        grid-template-columns: auto  ;
+    }
+    .div h3{
+        font-size: 17px;
+    }
+    .div p{
+        font-size: 14px;
+    }
+    .list{
+        width: 90%;
+        padding: 0px;
+    }
+}
